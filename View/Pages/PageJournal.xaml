@@ -1,0 +1,129 @@
+﻿<Page x:Class="Kinder.View.Pages.PageJournal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kinder.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="800"
+      Title="PageJournal">
+
+    <Grid Margin="30 0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Name="DateSelectionTbl"
+                   Grid.Row="0"
+                   Height="40"
+                   Width="200"
+                   HorizontalAlignment="Left"
+                   Text="Выберите дату"
+                   FontSize="25"/>
+        
+        <DatePicker Name="DateSelectionDP"
+                   Grid.Row="0"
+                   Height="40"
+                   Width="300"
+                   HorizontalAlignment="Center"
+                   FontSize="25"/>
+
+        <TextBlock Name="VidGroupTbl"
+                   Grid.Row="1"
+                   Height="40"
+                   Width="300"
+                   HorizontalAlignment="Left"
+                   Text="Выберите вид группы"
+                   FontSize="25"/>
+        
+        <ComboBox Name="VidGroupCmb"
+                  Grid.Row="2"
+                  Height="40"
+                  Width="300"
+                  HorizontalAlignment="Left"
+                  SelectionChanged="VidGroupCmb_SelectionChanged"/>
+
+        <TextBlock Name="GroupTbl"
+                   Grid.Row="3"
+                   Height="40"
+                   Width="200"
+                   HorizontalAlignment="Left"
+                   Text="Выберите группу"
+                   FontSize="25"/>
+        
+        <ComboBox Name="GroupCmb"
+                  Grid.Row="4"
+                  Height="40"
+                  Width="300"
+                  HorizontalAlignment="Left" 
+                  SelectionChanged="GroupCmb_SelectionChanged"
+                  SourceUpdated="GroupCmb_SourceUpdated"/>
+
+        <TextBlock Name="MarkTbl"
+                   Grid.Row="5"
+                   Height="40"
+                   Width="200"
+                   HorizontalAlignment="Left"
+                   Text="Выберите оценку"
+                   FontSize="25"/>
+
+        <Button Name="AddBtn"
+                Content="Добавить"
+                Grid.Row="6"
+                Height="40"
+                Width="150"
+                HorizontalAlignment="Left"
+                FontSize="25"
+                Click="AddBtn_Click" Margin="50,0,0,0"/>
+
+        <TextBlock Name="VATbl"
+                   Grid.Row="1"
+                   Height="40"
+                   Width="300"
+                   HorizontalAlignment="Right"
+                   Text="Выберите вид активности"
+                   FontSize="25"/>
+
+        <ComboBox Name="ActivityCmb"
+                  Grid.Row="2"
+                  Height="40"
+                  Width="300"
+                  HorizontalAlignment="Right"/>
+
+        <TextBlock Name="ActivityTbl"
+                   Grid.Row="3"
+                   Height="40"
+                   Width="300"
+                   HorizontalAlignment="Right"
+                   Text="Выберите мероприятие"
+                   FontSize="25"/>
+        
+        <ComboBox Name="DirectionCmb"
+                  Grid.Row="4"
+                  Height="40"
+                  Width="300"
+                  HorizontalAlignment="Right"/>
+
+        <ComboBox Name="MarkCmb"
+                  Grid.Row="5"
+                  Height="40"
+                  Width="300"
+                  HorizontalAlignment="Right"/>
+
+        <Button Name="EnterBtn"
+                Content="Назад"
+                Grid.Row="6"
+                Height="40"
+                Width="150"
+                HorizontalAlignment="Right"
+                FontSize="25"
+                Click="EnterBtn_Click" Margin="0,0,50,1"/>
+    </Grid>
+</Page>

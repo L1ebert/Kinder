@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9cc7a64542434f0b840c620711e7c977" Name="Diagram1">
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.Activity" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.Direction" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.Group" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.Journal" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.Mark" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tolmachev_KinderModel.VidGroup" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="Tolmachev_KinderModel.FK_Activity_Direction" ManuallyRouted="false" />
+        <AssociationConnector Association="Tolmachev_KinderModel.FK_Journal_Activity" ManuallyRouted="false" />
+        <AssociationConnector Association="Tolmachev_KinderModel.FK_Group_VidGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="Tolmachev_KinderModel.FK_Journal_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="Tolmachev_KinderModel.FK_Journal_Mark" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
